@@ -29,7 +29,7 @@ extension IntroViewController {
     @objc
     private func tapChaiButton(_ sender: UIButton) {
         let vc = JoinViewController.instance()
-        present(vc, animated: true, completion: nil)
+        present(vc, animated: false, completion: nil)
     }
     
 }
