@@ -66,6 +66,7 @@ class JoinViewController: UIViewController {
     }
     
     private func initViews() {
+        navigationController?.setNavigationBarHidden(true, animated: false)
         nameView.roundCorner(radius: 20)
         carrierView.roundCorner(radius: 20)
         registrationView.roundCorner(radius: 20)
@@ -123,6 +124,8 @@ class JoinViewController: UIViewController {
         okButton.setBackgroundImage(UIImage.imageFromColor(.lightGray), for: .disabled)
         okButton.setBackgroundImage(UIImage.imageFromColor(.black), for: .normal)
         okButton.titleLabel?.font = .systemFont(ofSize: 12, weight: .semibold)
+        okButton.addTarget(self, action: #selector(done(_:)), for: .touchUpInside)
+        
         okButton.isHidden = true
     }
     
@@ -215,7 +218,25 @@ extension JoinViewController {
             self.present(vc, animated: false, completion: nil)
         }
     }
+}
+
+extension JoinViewController {
+
+    @objc
+    private func done(_ sender: UIButton) {
+        let vc = AgreeViewController.instance()
+        vc.tapOK = {
+            DispatchQueue.main.async {
+                self.showPhoneVC()
+            }
+        }
+        present(vc, animated: true, completion: nil)
+    }
     
+    private func showPhoneVC() {
+        let vc = PhoneNumberAuthViewController.instance()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension JoinViewController: CarrierViewControllerDelegate {

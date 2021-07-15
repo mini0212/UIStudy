@@ -23,6 +23,12 @@
 		39946C4226A0022200CCBE6B /* CarrierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39946C4026A0022200CCBE6B /* CarrierCell.swift */; };
 		39946C4326A0022200CCBE6B /* CarrierCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39946C4126A0022200CCBE6B /* CarrierCell.xib */; };
 		39946C4926A009BF00CCBE6B /* UImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39946C4826A009BF00CCBE6B /* UImageView+Extensions.swift */; };
+		39946C4C26A00CE100CCBE6B /* AgreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39946C4A26A00CE100CCBE6B /* AgreeViewController.swift */; };
+		39946C4D26A00CE100CCBE6B /* AgreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39946C4B26A00CE100CCBE6B /* AgreeViewController.xib */; };
+		39946C5026A0481300CCBE6B /* PhoneNumberAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39946C4E26A0481300CCBE6B /* PhoneNumberAuthViewController.swift */; };
+		39946C5126A0481300CCBE6B /* PhoneNumberAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39946C4F26A0481300CCBE6B /* PhoneNumberAuthViewController.xib */; };
+		39946C5326A0569300CCBE6B /* TimeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39946C5226A0569200CCBE6B /* TimeProgressView.swift */; };
+		39946C5526A0569C00CCBE6B /* TimeProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39946C5426A0569C00CCBE6B /* TimeProgressView.xib */; };
 		4CD06AE0C84077A6C041010D /* Pods_UIStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C632EF80AEB32C406FC658B0 /* Pods_UIStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,12 @@
 		39946C4026A0022200CCBE6B /* CarrierCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierCell.swift; sourceTree = "<group>"; };
 		39946C4126A0022200CCBE6B /* CarrierCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarrierCell.xib; sourceTree = "<group>"; };
 		39946C4826A009BF00CCBE6B /* UImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Extensions.swift"; sourceTree = "<group>"; };
+		39946C4A26A00CE100CCBE6B /* AgreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeViewController.swift; sourceTree = "<group>"; };
+		39946C4B26A00CE100CCBE6B /* AgreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreeViewController.xib; sourceTree = "<group>"; };
+		39946C4E26A0481300CCBE6B /* PhoneNumberAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuthViewController.swift; sourceTree = "<group>"; };
+		39946C4F26A0481300CCBE6B /* PhoneNumberAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumberAuthViewController.xib; sourceTree = "<group>"; };
+		39946C5226A0569200CCBE6B /* TimeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProgressView.swift; sourceTree = "<group>"; };
+		39946C5426A0569C00CCBE6B /* TimeProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeProgressView.xib; sourceTree = "<group>"; };
 		7E30D43BE87915138601829D /* Pods-UIStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStudy.debug.xcconfig"; path = "Target Support Files/Pods-UIStudy/Pods-UIStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1E7B24C8A9EE8D4A533031 /* Pods-UIStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStudy.release.xcconfig"; path = "Target Support Files/Pods-UIStudy/Pods-UIStudy.release.xcconfig"; sourceTree = "<group>"; };
 		C632EF80AEB32C406FC658B0 /* Pods_UIStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +150,10 @@
 				390500CB269C974D00DE693A /* JoinViewController.xib */,
 				39946C3C269FD4EC00CCBE6B /* CarrierViewController.swift */,
 				39946C3D269FD4EC00CCBE6B /* CarrierViewController.xib */,
+				39946C4A26A00CE100CCBE6B /* AgreeViewController.swift */,
+				39946C4B26A00CE100CCBE6B /* AgreeViewController.xib */,
+				39946C4E26A0481300CCBE6B /* PhoneNumberAuthViewController.swift */,
+				39946C4F26A0481300CCBE6B /* PhoneNumberAuthViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -148,6 +164,8 @@
 				390500D8269C9C2C00DE693A /* BaseView.swift */,
 				39946C4026A0022200CCBE6B /* CarrierCell.swift */,
 				39946C4126A0022200CCBE6B /* CarrierCell.xib */,
+				39946C5226A0569200CCBE6B /* TimeProgressView.swift */,
+				39946C5426A0569C00CCBE6B /* TimeProgressView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,10 +248,13 @@
 			files = (
 				39946C4326A0022200CCBE6B /* CarrierCell.xib in Resources */,
 				390500C1269C925B00DE693A /* LaunchScreen.storyboard in Resources */,
+				39946C5126A0481300CCBE6B /* PhoneNumberAuthViewController.xib in Resources */,
+				39946C4D26A00CE100CCBE6B /* AgreeViewController.xib in Resources */,
 				390500BE269C925B00DE693A /* Assets.xcassets in Resources */,
 				390500CD269C974D00DE693A /* JoinViewController.xib in Resources */,
 				390500BC269C925A00DE693A /* Intro.storyboard in Resources */,
 				39946C3F269FD4EC00CCBE6B /* CarrierViewController.xib in Resources */,
+				39946C5526A0569C00CCBE6B /* TimeProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +313,13 @@
 				390500B5269C925A00DE693A /* AppDelegate.swift in Sources */,
 				390500CC269C974D00DE693A /* JoinViewController.swift in Sources */,
 				390500D9269C9C2C00DE693A /* BaseView.swift in Sources */,
+				39946C5326A0569300CCBE6B /* TimeProgressView.swift in Sources */,
 				39946C3E269FD4EC00CCBE6B /* CarrierViewController.swift in Sources */,
 				39946C38269DE28400CCBE6B /* UIVIew+Extensions.swift in Sources */,
 				39946C4926A009BF00CCBE6B /* UImageView+Extensions.swift in Sources */,
 				390500B7269C925A00DE693A /* SceneDelegate.swift in Sources */,
+				39946C5026A0481300CCBE6B /* PhoneNumberAuthViewController.swift in Sources */,
+				39946C4C26A00CE100CCBE6B /* AgreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
